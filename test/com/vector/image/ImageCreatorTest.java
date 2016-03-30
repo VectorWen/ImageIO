@@ -15,6 +15,8 @@ public class ImageCreatorTest {
     private String out = "E:/1/2.png";
     private String empty = "E:/1/messages.properties";
 
+    private String path = "e:/1/1/";
+
     @Test
     public void createdEmpty() throws IOException {
         ImageCreator.createdEmpty(out,100,100);
@@ -23,6 +25,10 @@ public class ImageCreatorTest {
     @Test
     public void createdRed() throws IOException {
         ImageCreator.createdRed(out,100,100);
+    }
+    @Test
+    public void createdChar() throws IOException {
+        ImageCreator.createdChar(path,100,100,100);
     }
 
 }
